@@ -1,6 +1,6 @@
 {
   "name": "reactjs-ui-components",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "build/index.js",
   "peerDependencies": {
@@ -16,9 +16,13 @@
     "start": "webpack --watch",
     "build": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isurajkc/reactjs-ui-components.git"
+  },
   "author": {
-    "name": "Your name",
-    "email": "your email"
+    "name": "Suraj kc",
+    "email": "suraj.kc@yipl.com.np"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

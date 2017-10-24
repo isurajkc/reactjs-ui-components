@@ -1,0 +1,32 @@
+@mixin button-size($button-padding-vertical,$button-padding-horizontal,$button-font-size,$button-line-height,$button-border-radius) {
+  padding: $button-padding-vertical $button-padding-horizontal;
+  font-size: $button-font-size;
+  line-height: $button-line-height;
+  border-radius: $button-border-radius;
+}
+
+@mixin button-variant($button-text-color,$button-bg-color,$button-border-color) {
+  color: $button-text-color;
+  background-color: $button-bg-color;
+  border-color: $button-border-color;
+  transition: all 300ms ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $button-text-color;;
+    background-color: darken($button-bg-color, 10%);
+    border-color: darken($button-border-color, 13%);
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $button-bg-color;
+      border-color: $button-border-color;
+    }
+  }
+}

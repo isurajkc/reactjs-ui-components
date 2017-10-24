@@ -1,0 +1,17 @@
+.text {
+    color: #4a4a4a;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    &.light {
+        color: #000;
+    }
+    &.uppercase {
+    text-transform: uppercase;
+}
+}
+

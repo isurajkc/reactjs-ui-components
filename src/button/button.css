@@ -1,0 +1,26 @@
+@import "./button.mixin";
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid;
+    letter-spacing: 0;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    @include button-size(15px, 24px, 16px, 1.2, 6px);
+}
+
+.btn.primary {
+    @include button-variant(#fff, teal, teal);
+}
